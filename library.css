@@ -1,0 +1,189 @@
+#library{
+    
+min-height: 100vh;
+background-image:linear-gradient(to bottom, #012648 4%, #012648 15%, #090F1B) ;
+background-repeat: repeat;
+}
+h1 {
+font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 75px;
+}
+h2{font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 50px;
+}
+h3{font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 40px;
+}
+p{ 
+font-family: "DM Mono", monospace;
+color: #FFFFFF;
+font-size: 25px;
+}
+
+#library .section-intro{
+ display: flex;
+    align-items: center;
+    gap: 20px;}
+#library .section-intro .text-intro .title-intro{margin:50px;} 
+#library .section-intro .text-intro .description{white-space: pre-wrap;}
+#library .section-intro .image{
+    margin-left: 100px;
+}
+#library .section-intro .image img{
+  width: 500 px;
+  height: auto;
+  display: block;
+ filter:drop-shadow(0 0 50px  #3996B6)
+        drop-shadow(  0 0 75px #196932);
+}
+
+
+#library .library-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+#library .library-grid .item1 {
+    transform: translateY(50px);
+}
+#library .library-grid .item2 {
+    transform: translateY(0px);  
+}
+#library .library-grid .item3 {
+    transform: translateY(50px);   
+}
+
+#library .library-grid .item4{
+    position: relative;
+left: 250px;
+transform: translateY(50px);}
+#library .library-grid .item5 {
+    position: relative;
+    left: 250px;
+    transform: translateY(50px);
+}
+
+/* كل عنصر (icon + title) */
+#library .library-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+}
+
+#library .library-item img {
+ width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease , opacity 0.3s ease;
+    opacity: 0.35;
+}
+
+#library .library-item:hover img {
+  transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    opacity: 0.6;
+}
+
+#library .library-item .library-link{
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2rem;
+    text-align: center;
+    pointer-events: auto; 
+    font-weight: bold;
+    text-decoration: none; 
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+#library .library-item .library-link:hover,
+#library .library-item .library-link:focus {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+    #library .section-intro {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #library .section-intro .image {
+        margin-left: 0;
+    }
+
+    #library .section-intro .image img {
+        width: 250px;
+        height: auto;
+    }
+
+    #library .section-intro .text-intro .title-intro {
+        margin: 20px 0;
+    }
+    #library .library-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    #library .library-grid .item1,
+    #library .library-grid .item2,
+    #library .library-grid .item3,
+    #library .library-grid .item4,
+    #library .library-grid .item5 {
+        transform: none;
+        left: 0;
+        position: static;
+    }
+
+    #library .library-item {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    #library .library-item .library-link {
+        font-size: 1.5rem;
+        top: 45%;
+    }
+}

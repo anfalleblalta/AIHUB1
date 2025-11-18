@@ -1,0 +1,249 @@
+#library-detail {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #012648 4%, #012648 15%, #090F1B);
+  padding: 50px;
+}
+
+h2{font-family:"Goldman", sans-serif;  
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 50px;
+}
+h3{font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+p{ 
+font-family: "DM Mono", monospace;
+color: #FFFFFF;
+font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+#library-detail .header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+#library-detail .header .image img {
+    width: 100%;
+    height: 600px;
+    display: block;
+    opacity: 0.35;
+}
+#library-detail .header .header-text {
+    position: absolute;
+    top: 50%;         
+    left: 50%;         
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+#library-detail .header .header-text h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family:"Goldman", sans-serif; 
+}
+#library-detail .header .header-text p {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-family: "DM Mono", monospace;
+}
+
+#library-detail .header .explore-btn {
+    display: inline-block;
+    margin: 50px auto 50px auto;
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid white;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease;
+   
+}
+#library-detail .header .explore-btn a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+#library-detail .header .explore-btn:hover {
+    background: gray;
+    color: black;
+    transform: translateY(-2px);
+}
+
+#library-detail .resources {
+  margin-bottom: 60px;
+}
+#library-detail .scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+#library-detail .scroll-container::-webkit-scrollbar {
+  height: 10px;
+}
+#library-detail .scroll-container::-webkit-scrollbar-thumb {
+  background-color: #3996B6;
+  border-radius: 5px;
+}
+
+#library-detail .scroll-container::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+
+.book-item, .site-item, .drive-item {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: rgba(8,149,104,0.2);
+  border-radius: 30px;
+  padding: 15px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover, .site-item:hover, .drive-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.book-item img, .site-item img, .drive-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.book-item:hover img, .site-item:hover img, .drive-item:hover img {
+  transform: scale(1.05);
+}
+
+.book-item button, .site-item button, .drive-item button {
+  display: block;
+  margin: 10px auto 0 auto;
+  padding: 8px 15px;
+  background-color: #031F3B;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-item button:hover, .site-item button:hover, .drive-item button:hover {
+  background-color: #196932;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+#library-detail .creative-footer {
+  margin: 100px auto;
+  padding: 20px;
+  width: 600px;
+  background: rgba(129, 222, 235, 0.2);
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Goldman", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#library-detail .creative-footer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+
+@media (max-width: 600px) {
+
+    #library-detail {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+
+    #library-detail .header .image img {
+        height: 250px;
+        object-fit: cover;
+        opacity: 0.35;
+    }
+
+    #library-detail .header .header-text {
+        width: 95%;
+    }
+
+    #library-detail .header .header-text h1 {
+        font-size: 2rem;
+    }
+
+    #library-detail .header .header-text p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    #library-detail .header .explore-btn {
+        margin: 20px auto;
+        padding: 10px 18px;
+    }
+
+    #library-detail .scroll-container {
+        gap: 10px;
+        padding-bottom: 8px;
+    }
+
+    .book-item, .site-item, .drive-item {
+        width: 180px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .book-item img,
+    .site-item img,
+    .drive-item img {
+        height: 110px;
+        border-radius: 15px;
+    }
+
+    .book-item button,
+    .site-item button,
+    .drive-item button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    #library-detail .creative-footer {
+        width: 90%;
+        margin: 50px auto;
+        font-size: 1.5rem;
+        padding: 15px;
+        border-radius: 35px;
+    }
+}

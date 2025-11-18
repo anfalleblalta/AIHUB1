@@ -1,0 +1,278 @@
+
+
+#events{
+min-height: 100vh;
+background-image:linear-gradient(to bottom, #012648 4%, #012648 15%, #090F1B) ;
+background-repeat: repeat;
+}
+h1 {
+font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 75px;
+}
+h2{font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 50px;
+}
+h3{font-family:"Goldman", sans-serif;  
+white-space: pre-line;
+background: linear-gradient(to bottom, #196932 , #318A7D 47% ,#4DAED0 );
+background-clip: text ;
+color: transparent;
+font-size: 40px;
+}
+p{ 
+font-family: "DM Mono", monospace;
+color: #FFFFFF;
+font-size: 25px;
+}
+a{
+text-decoration:none ;
+background: linear-gradient(to bottom, #3996B6 , #BBD4D0 50% ,#196932 );
+background-clip: text ;
+color: transparent;
+}
+#events .section-intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#events .section-intro .text-intro .title-intro{
+margin:50px;
+}
+#events .section-intro .text-intro .description{white-space: pre-wrap;}
+#events .section-intro .image img{
+ width: 250 px;
+  height: auto;
+  display: block;
+ filter:drop-shadow(0 0 50px  #3996B6)
+        drop-shadow(  0 0 75px #196932);
+}
+
+#events .upcoming{
+flex-direction: column;
+gap: 20px;
+display:flex;
+}
+#events .upcoming .title-upcoming{
+    margin: 30px 50px 0px 50px ;}
+#events .upcoming .upcoming-events {
+        margin-top: -50px;
+    }
+
+#events .upcoming .upcoming-events .upcoming-event {
+    position: relative;
+    background-color: rgba(8,149,104,0.25);
+    border-radius: 40px;
+    margin: 30px 50px;
+    width: 85%;
+    padding:0px 15px 15px 15px;
+    line-height: 1;
+    z-index: 1;
+}
+#events .upcoming .upcoming-events .upcoming-event::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 1px;
+    background: linear-gradient(to bottom, #3996B6 71%, #196932);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    z-index: -1;
+}
+
+#events .upcoming .upcoming-events .upcoming-event .event-link{
+    position: relative;
+    background-color: #031F3B;
+    border-radius: 100px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-left: auto; 
+    display: block;
+    z-index: 1;
+}
+#events .upcoming .upcoming-events .upcoming-event .event-link::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100px;
+    padding: 2.5px;
+    background: linear-gradient(to bottom, #3996B6 71%, #196932);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+#events .passed .passed-title{
+   margin:30px 50px 0px 50px ;}
+#events .passed .past-events {
+    margin-top: -25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 20px 50px;    }
+
+#events .passed .past-events .past-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#events .passed .past-events .past-event .past-card img{
+    width:600px;
+    height: 350px;
+}
+#events .passed .past-events .past-event .past-description a {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#events .passed .past-events .past-event .past-description a:hover {
+    text-decoration: underline;
+    color: #3996B6; 
+}
+#events .passed .past-events .past-event .past-description .event-info {
+    color: rgba(255, 255,255, 0.2);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#events .passed .past-events .past-event .past-description {
+    position: relative;
+    background-color: rgba(8,149,104,0.25);
+    border-radius: 40px;
+    margin: 10px auto 0 auto;
+    width: 85%;
+    padding: 0px 15px 15px 15px;
+    line-height:1.5;
+    z-index: 1;
+}
+#events .passed .past-events .past-event .past-description::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 1px;
+    background: linear-gradient(to bottom, #3996B6 71%, #196932);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    z-index: -1;
+}
+
+#events .passed .past-events .past-event .event-details{
+    position: relative;
+    background-color: #031F3B;
+    border-radius: 100px;
+    padding: 10px 20px;
+    margin: 15px auto 0 auto;
+    margin-left: auto; 
+    display: inline-block;
+    z-index: 1;
+
+}
+#events .passed .past-events .past-event .event-details::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 100px;
+    padding: 2.5px;
+    background: linear-gradient(to bottom, #3996B6 71%, #196932);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
+    h3 { font-size: 26px; }
+    p  { font-size: 18px; }
+    #events .section-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #events .section-intro .text-intro .title-intro {
+        margin: 20px;
+    }
+
+    #events .section-intro .image img {
+        width: 180px;
+        height: auto;
+    }
+
+    #events .upcoming .title-upcoming {
+        margin: 20px;
+        text-align: center;
+    }
+
+    #events .upcoming .upcoming-events .upcoming-event {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    #events .upcoming .upcoming-events .upcoming-event .event-link {
+        margin: 15px auto 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    #events .passed .past-events {
+        grid-template-columns: 1fr;  
+        padding: 10px 20px;
+        gap: 25px;
+    }
+
+    #events .passed .past-events .past-event .past-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    #events .passed .past-events .past-event .past-description {
+        width: 95%;
+    }
+
+    #events .passed .past-events .past-event .event-details {
+        margin: 15px auto 0 auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #events {
+        padding-bottom: 30px;
+    }
+}
